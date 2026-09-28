@@ -1,6 +1,6 @@
-# 🧠 My Custom AI Skills & Instructions
+# 🧠 My Custom AI Skills, Instructions & Tooling
 
-A centralized repository collecting custom skills, agent workflows, hooks, rules, and prompt instructions for **Google Gemini / Antigravity**, **Anthropic Claude Code**, and **GitHub Copilot**.
+A centralized repository collecting custom skills, agent workflows, hooks, rules, prompt instructions, and new machine developer setup guides for **Google Gemini / Antigravity**, **Anthropic Claude Code**, and **GitHub Copilot**.
 
 ---
 
@@ -9,26 +9,15 @@ A centralized repository collecting custom skills, agent workflows, hooks, rules
 ```text
 my-custom-ai-skills/
 ├── projects/
-│   ├── gemini/
-│   │   ├── skills/          # clean-md, gemini-cert-prep-mentoring, weekly-report
-│   │   ├── rules/           # communication.md
-│   │   └── instructions/    # binit, ambient-expense, AWS template GEMINI.md files
-│   ├── claude/
-│   │   ├── skills/          # a11y-url-check, clean-md, weekly-report
-│   │   ├── agents/          # a11y-auditor
-│   │   ├── hooks/           # schema-guard.js, enforce-camelcase.js, INVESTIGATION.md
-│   │   └── instructions/    # binit & uigen CLAUDE.md files, architecture notes
-│   └── copilot/
-│       └── instructions/    # core-epam and default copilot instructions
-└── personal/
-    ├── gemini/
-    │   ├── skills/          # study-guide-generator, clean-md, weekly-report, google-agents-cli-*
-    │   └── rules/           # communication.md
-    ├── claude/
-    │   ├── skills/          # cca-f-quiz-review, weekly-report, clean-md
-    │   └── CLAUDE.md        # Personal global Claude instructions
-    └── copilot/
-        └── instructions/    # global-copilot-instructions.md (from ~/.github)
+│   ├── gemini/          # Project skills, rules, GEMINI.md files
+│   ├── claude/          # Project skills, agents, hooks, CLAUDE.md files
+│   └── copilot/         # Project copilot-instructions.md files
+├── personal/
+│   ├── gemini/          # Personal skills (study-guide-generator, ADK CLI) & rules
+│   ├── claude/          # Personal CLAUDE.md, cca-f-quiz-review
+│   └── copilot/         # Global fallback copilot instructions
+└── tools/
+    └── new-machine-setup.md # Complete checklist of all runtimes, CLIs, and tools
 ```
 
 ---
@@ -74,8 +63,8 @@ my-custom-ai-skills/
 
 ---
 
-## 🚀 How to Use & Sync
+### 💻 3. Developer Toolchain & New Machine Setup (`tools/`)
 
-- **Gemini / Antigravity**: Copy to `.agents/skills/` or `~/.gemini/config/skills/`.
-- **Claude Code**: Copy to `.claude/skills/`, `.claude/agents/`, or `.claude/hooks/`.
-- **GitHub Copilot**: Copy to `.github/copilot-instructions.md` (project) or `~/.github/copilot-instructions.md` (global).
+| File | Purpose |
+| :--- | :--- |
+| [`new-machine-setup.md`](file:///c:/Users/szilvia_toth1/Documents/projects/my-custom-ai-skills/tools/new-machine-setup.md) | Step-by-step installation commands (`winget`, `npm`, `pip`, `dotnet`, `docker`, `aws`, `gcloud`, SSH configs) for `core-epam`, `AWS`, `claude`, `gemini`, and `.NET`. |
